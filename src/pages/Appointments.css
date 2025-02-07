@@ -1,0 +1,108 @@
+
+.appointments-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  font-size: 2.5em;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.date-picker-button {
+  padding: 8px 16px;
+  font-size: 1em;
+  color: #6c757d;
+  background-color: #f1f3f5;
+  border: 1px solid #d3d9de;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.time-toggle-container {
+  display: flex;
+  gap: 5px;
+  margin-top: 10px;
+  justify-content: center;
+}
+
+.time-toggle-button {
+  padding: 8px 20px;
+  font-size: 1em;
+  font-weight: bold;
+  color: #fff;
+  background-color: #000;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.time-toggle-button.active {
+  background-color: #fff;
+  color: #000;
+  border: 1px solid #000;
+}
+
+.location-section {
+  width: 100%;
+  max-width: 600px;
+  margin: 20px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.location-title {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.appointment-time-slots {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.time-slot {
+  padding: 10px 15px;
+  font-size: 1em;
+  font-weight: bold;
+  color: #fff;
+  background-color: #000;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.time-slot.available {
+  background-color: #fff;
+  color: #000;
+  border: 1px solid #000;
+}
+
+.time-slot:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+.appointment-footer {
+  font-size: 0.8em;
+  color: #6c757d;
+  margin-top: 30px;
+}
+
+.time-slot:disabled {
+  background-color: #ccc;
+  color: #666;
+  cursor: not-allowed;
+}
